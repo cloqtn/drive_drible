@@ -1,0 +1,216 @@
+/* Général */
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Image/ImageFondV1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Liste texe*/
+.liste_texte {
+    margin-right: 10%;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.navSup {
+    box-shadow: 0 3px 5px rgb(255, 1, 1);
+    background-color: #000000;
+}
+
+.sepnav {
+    color: rgb(255, 1, 1);
+    margin: 0px;
+    margin-top: 1px;
+}
+
+.navInf {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.navChampionats{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+/* Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-logo {
+    width: 25px; 
+    max-width: 100%;
+    margin: 0 10px;
+    height: auto; 
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustement de l'image du logo */
+.LogoSite {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+/* Barre de navigation */
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Personnalisation des liens de navigation */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.nav-item {
+    text-align: center;
+    margin: auto;
+}
+
+.navSup-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b5b5b;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navInf-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b5b5b;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navSup-link.active {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.navInf-link.active {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.navSup-link:hover {
+    color: #ffffff;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.navInf-link:hover {
+    color: #ffffff;
+    background-color: rgb(139, 139, 139);
+    border-radius: 5px;
+}
+
+/* Responsive pour tablettes (écran < 768px) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 15px; /* Espacement réduit */
+    }
+    .nav-item {
+        padding: 5px 10px; /* Réduit les marges */
+    }
+    .navSup-link, .navInf-link {
+        font-size: 14px; /* Taille de police plus petite */
+    }
+    .LogoSite {
+        max-height: 40px; /* Réduit la taille du logo */
+    }
+}
+
+/* Responsive pour mobiles (écran < 480px) */
+@media (max-width: 480px) {
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    .navSup-link, .navInf-link {
+        font-size: 12px; /* Taille encore plus petite */
+        padding: 3px 5px; /* Ajustement des espacements */
+    }
+    .LogoSite {
+        max-height: 30px; /* Réduit la taille du logo pour mobile */
+    }
+    .navSup, .navInf {
+        padding: 5px; /* Réduit les marges autour du nav */
+    }
+}
+
+
+section {
+    padding: 2vw;
+    margin: 2vw auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    max-width: 90%;
+    backdrop-filter: blur(5px);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding-bottom: 20px;
+    background-color: rgba(88, 88, 88, 0.9);
+    text-align: center;
+    font-size: x-small;
+    color: white;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.reseaux {
+    display: inline-block;
+    text-align: center;
+    width: 35%;
+    height: 100px;
+    margin: 5%;
+    padding: 2%;
+}
+
+.footer-link {
+    display: inline-block;
+    margin: 5%;
+    padding: 2%;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+
+.footer-link:hover {
+    color: #d69494bb;
+    border-radius: 5px;
+}
+
