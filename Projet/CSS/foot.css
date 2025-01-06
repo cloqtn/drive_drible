@@ -50,15 +50,6 @@ body {
     margin-right: 10px;
 }
 
-.nav-logo {
-    width: 25px; 
-    max-width: 100%;
-    margin: 0 10px;
-    height: auto; 
-    display: flex;
-    align-items: center;
-}
-
 /* Ajustement de l'image du logo */
 .LogoSite {
     max-height: 50px;

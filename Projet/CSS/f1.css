@@ -13,36 +13,21 @@ body {
     background-position: center;
 }
 
-.navsup {
-    background-color: #000000;
-    box-shadow: 0 3px 5px rgb(255, 1, 1);
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
 /* Logo */
 .navbar-brand {
-    align-items: center;
+    display: flex;
     text-decoration: none;
+    width:10vw;
 }
 
 /* Ajustement de l'image du logo */
 .LogoSite {
     max-height: 50px;
-    margin: 5%;
+    margin: 2%;
     object-fit: contain;
 }
 
-/* Personnalisation des liens de navigation */
-.nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #333333;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
+/* Barre de navigation */
 .navbar-nav {
     list-style: none;
     display: flex;
@@ -51,17 +36,12 @@ body {
     text-align: center;
 }
 
-.nav-itemsup {
-    background-color: rgb(209, 5, 5);
-    margin: 10%;
-    height: 10%;
-}
-
-.nav-iteminf {
+.nav-item {
     text-align: center;
     margin: auto;
 }
 
+/* Personnalisation des liens de navigation */
 .nav-link {
     font-size: 16px;
     font-weight: bold;
@@ -84,6 +64,125 @@ body {
     border-radius: 5px;
 }
 
+/* Barre de navigation supérieure */
+.navsup {
+    background-color: #000000;
+    box-shadow: 0 3px 5px rgb(255, 1, 1);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: auto;
+}
+
+.navbar-navsup {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 90vw;
+}
+
+.nav-itemsup {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+.nav-itemsuptxt {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+/* Séparateur des barres de navigation */
+.sepnav {
+    color: rgb(255, 1, 1);
+    margin: 0px;
+    margin-top: 1px;
+}
+
+/* Barre de navigation inférieure */
+.navinf {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2vw;
+}
+
+
+section {
+    padding: 2vw;
+    margin: 2vw auto;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.introduction {
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 90vw;
+}
+
+.liste_texte {
+    margin-right: 10%;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.article {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 2vw;
+    width: 20vw;
+}
+
+
+.image-article {
+    max-width: 18vw;
+}
+
+.texte-article {
+    display: inline;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Pied de page */
+footer {
+    padding-bottom: 20px;
+    background-color: rgba(88, 88, 88, 0.9);
+    text-align: center;
+    font-size: x-small;
+    color: white;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.reseaux {
+    display: inline-block;
+    text-align: center;
+    width: 35vw;
+    height: 100px;
+    margin: 5vw;
+    padding: 2vw;
+}
+
+/* Liens du pied de page */
+.footer-link {
+    display: inline-block;
+    margin: 5%;
+    padding: 2%;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #d69494bb;
+    border-radius: 5px;
+}
+
+
 /* Responsive pour tablettes (écran < 768px) */
 @media (max-width: 768px) {
     .navbar-nav {
@@ -92,11 +191,19 @@ body {
     .nav-item {
         padding: 5px 10px; /* Réduit les marges */
     }
+    .nav-itemsuptxt {
+        gap: 15px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
     .nav-link{
         font-size: 14px; /* Taille de police plus petite */
     }
     .LogoSite {
         max-height: 40px; /* Réduit la taille du logo */
+    }
+    .texte-article {
+        font-size: 12px; /* Taille de police plus petite */
     }
 }
 
@@ -116,66 +223,7 @@ body {
     .navsup, .navinf {
         padding: 5px; /* Réduit les marges autour du nav */
     }
+    .texte-article {
+        font-size: 10px; /* Taille de police plus petite */
+    }
 }
-
-.sepnav {
-    color: rgb(255, 1, 1);
-    margin: 0px;
-    margin-top: 1px;
-}
-
-.navinf {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 2vw;
-}
-
-section {
-    padding: 2vw;
-    margin: 2vw auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
-    max-width: 90%;
-    backdrop-filter: blur(5px);
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    padding-bottom: 20px;
-    background-color: rgba(88, 88, 88, 0.9);
-    text-align: center;
-    font-size: x-small;
-    color: white;
-    width: 100%;
-    margin-top: auto; 
-}
-
-.reseaux {
-    display: inline-block;
-    text-align: center;
-    width: 35%;
-    height: 100px;
-    margin: 5%;
-    padding: 2%;
-}
-
-.footer-link {
-    display: inline-block;
-    margin: 5%;
-    padding: 2%;
-    outline: none;
-    text-decoration: none;
-    font-size: 16px;
-    color: #ffffff;
-    transition: color 0.3s ease;
-}
-
-
-.footer-link:hover {
-    color: #d69494bb;
-    border-radius: 5px;
-}
-
-
